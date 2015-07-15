@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+<div class="container">
+
+        <h2>MVC Jquery DataTable - NorthWind DB</h2>
+        <hr />
+        <br />
+        <br />
+
+
+        <!-- Panel Container-->
+        <div class="col-md-12" style="background-color:#e35b5a; padding: 0px 1px 1px 1px;">
+
+            <!-- Panel Title -->
+            <div class="col-md-12" style="background-color:#e35b5a; padding: 5px 10px 5px 10px;">
+
+                <!-- Title -->
+                <div class="col-md-6" 
+                    style="font-size:18px; color:white; padding: 7px 0px 0px 0px;
+                             line-height:18px">
+                    The Ultimate Table!
+                </div>
+
+            
+                <!-- Spacer -->
+                <div class="col-md-4"></div>
+
+                <!-- Show/Hide Columns -->
+                <div class="col-md-2">
+                   <!-- <a class="btn btn-default btn-sm" href="#" data-toggle="dropdown">Show/Hide Columns <i class="fa fa-angle-down"></i>
+                        </a>-->
+                    
+                        <a class="btn btn-default btn-sm" href="#" data-toggle="dropdown">Show/Hide Columns <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div id="sample_4_column_toggler" class="dropdown-menu hold-on-click dropdown-checkboxes" style="padding:15px">
+                            <label>
+                                <input type="checkbox" checked data-column="0">Expander</label>
+                            @*<label>
+                                <input type="checkbox" checked data-column="1">CustomerID</label>*@
+                            <label>
+                                <input type="checkbox" checked data-column="2">CompanyName</label>
+                            <label>
+                                <input type="checkbox" checked data-column="3">ContactName</label>
+                            <label>
+                                <input type="checkbox" checked data-column="4">ContactTitle</label>
+                            <label>
+                                <input type="checkbox" checked data-column="5">Address</label><br />
+                            <label>
+                                <input type="checkbox" checked data-column="6">City</label><br />
+                            <label>
+                                <input type="checkbox" checked data-column="7">Region</label>
+                            <label>
+                                <input type="checkbox" checked data-column="8">PostalCode</label>
+                            <label>
+                                <input type="checkbox" checked data-column="9">Country</label><br />
+                            <label>
+                                <input type="checkbox" checked data-column="10">Phone</label><br />
+                            <label>
+                                <input type="checkbox" checked data-column="11">Fax</label>
+                        </div>
+                    </div>
+              
+
+            </div>
+            
+
+            <!-- Panel Body -->
+            <div class="col-md-12" style="background-color:white; padding: 10px 10px 10px 10px">
+                 <table id="sample_4" 
+                     style="white-space: nowrap;"
+                     class="table table-responsive table-striped table-bordered table-hover">
+                     <thead>
+                         <tr>
+                             <th></th>
+                             <th>CustomerID</th>
+                             <th>CompanyName</th>
+                             <th>ContactName</th>
+                             <th>ContactTitle</th>
+                             <th>Address</th>
+                             <th>City</th>
+                             <th>Region</th>
+                             <th>PostalCode</th>
+                             <th>Country</th>
+                             <th>Phone</th>
+                             <th>Fax</th>
+                         </tr>
+                     </thead>
+							
+                    
+
+            
+        </table>
+            </div>
+
+           
+
+
+
+        </div>
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    </div><!-- END CONTAINER -->
+

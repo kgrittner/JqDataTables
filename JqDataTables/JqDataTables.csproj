@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59A0DF55-C660-4571-9762-B3CA8F7241BA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JqDataTables</RootNamespace>
+    <AssemblyName>JqDataTables</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Publish\Websites\SFTParts\ReportGen\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLHelper">
+      <HintPath>..\..\..\Classes\PersonalLoggingTest\SQLHelper\bin\Debug\SQLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\select2-spinner.gif" />
+    <Content Include="Content\css\select2.css" />
+    <Content Include="Content\css\select2.png" />
+    <Content Include="Content\css\select2x2.png" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.autoFill.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.autoFill.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.bootstrap.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.colReorder.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.colReorder.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.colVis.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.colvis.jqueryui.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.colVis.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.fixedColumns.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.fixedColumns.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.fixedHeader.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.fixedHeader.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.foundation.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.jqueryui.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.keyTable.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.keyTable.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.responsive.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.scroller.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.scroller.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.tableTools.css" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.tableTools.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\jquery.dataTables.css" />
+    <Content Include="Content\DataTables-1.10.2\css\jquery.dataTables.min.css" />
+    <Content Include="Content\DataTables-1.10.2\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Content\DataTables-1.10.2\images\background.png" />
+    <Content Include="Content\DataTables-1.10.2\images\back_disabled.png" />
+    <Content Include="Content\DataTables-1.10.2\images\back_enabled.png" />
+    <Content Include="Content\DataTables-1.10.2\images\back_enabled_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\collection.png" />
+    <Content Include="Content\DataTables-1.10.2\images\collection_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\copy.png" />
+    <Content Include="Content\DataTables-1.10.2\images\copy_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\csv.png" />
+    <Content Include="Content\DataTables-1.10.2\images\csv_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\filler.png" />
+    <Content Include="Content\DataTables-1.10.2\images\forward_disabled.png" />
+    <Content Include="Content\DataTables-1.10.2\images\forward_enabled.png" />
+    <Content Include="Content\DataTables-1.10.2\images\forward_enabled_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\insert.png" />
+    <Content Include="Content\DataTables-1.10.2\images\loading-background.png" />
+    <Content Include="Content\DataTables-1.10.2\images\pdf.png" />
+    <Content Include="Content\DataTables-1.10.2\images\pdf_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\print.png" />
+    <Content Include="Content\DataTables-1.10.2\images\print_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\images\sort_asc.png" />
+    <Content Include="Content\DataTables-1.10.2\images\sort_asc_disabled.png" />
+    <Content Include="Content\DataTables-1.10.2\images\sort_both.png" />
+    <Content Include="Content\DataTables-1.10.2\images\sort_desc.png" />
+    <Content Include="Content\DataTables-1.10.2\images\sort_desc_disabled.png" />
+    <Content Include="Content\DataTables-1.10.2\images\xls.png" />
+    <Content Include="Content\DataTables-1.10.2\images\xls_hover.png" />
+    <Content Include="Content\DataTables-1.10.2\swf\copy_csv_xls.swf" />
+    <Content Include="Content\DataTables-1.10.2\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\simple-line.css" />
+    <Content Include="Content\TableTools.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Copy of index.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="metronic.html" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.responsive.scss" />
+    <Content Include="Content\DataTables-1.10.2\css\dataTables.jqueryui.scss" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
+    <None Include="Properties\PublishProfiles\JqDataTabels.pubxml" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.autoFill.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.autoFill.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.bootstrap.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.colReorder.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.colReorder.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.colVis.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.colVis.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.fixedColumns.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.fixedColumns.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.fixedHeader.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.fixedHeader.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.foundation.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.jqueryui.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.keyTable.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.keyTable.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.responsive.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.responsive.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.scroller.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.scroller.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.tableTools.js" />
+    <Content Include="Scripts\DataTables-1.10.2\dataTables.tableTools.min.js" />
+    <Content Include="Scripts\DataTables-1.10.2\jquery.dataTables.js" />
+    <Content Include="Scripts\DataTables-1.10.2\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ar.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_az.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_bg.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ca.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_cs.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_da.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_de.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_el.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_es.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_et.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_eu.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_fa.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_fi.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_fr.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_gl.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_he.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_hr.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_hu.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_id.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_is.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_it.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ja.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ka.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ko.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_lt.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_lv.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_mk.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ms.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_nl.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_no.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_pl.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_pt-BR.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_pt-PT.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ro.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_rs.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ru.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_sk.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_sv.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_th.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_tr.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ua.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_ug-CN.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_uk.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_vi.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_zh-CN.js" />
+    <Content Include="Scripts\Select2-locales\select2_locale_zh-TW.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\TableTools.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="site\css\Copy of metronic-components.css" />
+    <Content Include="site\css\Copy of metronic-plugins.css" />
+    <Content Include="site\css\metronic-components.css" />
+    <Content Include="site\css\metronic-plugins.css" />
+    <Content Include="site\css\portlet.css" />
+    <Content Include="site\custom.js" />
+    <Content Include="site\img\accordion-plusminus.png" />
+    <Content Include="site\img\ajax-loading.gif" />
+    <Content Include="site\img\ajax-modal-loading.gif" />
+    <Content Include="site\img\datatable-row-openclose.png" />
+    <Content Include="site\img\input-spinner.gif" />
+    <Content Include="site\img\loading-spinner-blue.gif" />
+    <Content Include="site\img\loading-spinner-default.gif" />
+    <Content Include="site\img\loading-spinner-grey.gif" />
+    <Content Include="site\img\loading.gif" />
+    <Content Include="site\img\overlay-icon.png" />
+    <Content Include="site\img\portlet-collapse-icon-white.png" />
+    <Content Include="site\img\portlet-collapse-icon.png" />
+    <Content Include="site\img\portlet-config-icon-white.png" />
+    <Content Include="site\img\portlet-config-icon.png" />
+    <Content Include="site\img\portlet-expand-icon-white.png" />
+    <Content Include="site\img\portlet-expand-icon.png" />
+    <Content Include="site\img\portlet-reload-icon-white.png" />
+    <Content Include="site\img\portlet-reload-icon.png" />
+    <Content Include="site\img\portlet-remove-icon-white.png" />
+    <Content Include="site\img\portlet-remove-icon.png" />
+    <Content Include="site\img\remove-icon-small.png" />
+    <Content Include="site\img\syncfusion-icons-white.png" />
+    <Content Include="site\img\syncfusion-icons.png" />
+    <Content Include="site\test.js" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="Scripts\toastr.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63868/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\JqDataTables.dll
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\JqDataTables.pdb
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\obj\Release\JqDataTables.dll
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\obj\Release\JqDataTables.pdb

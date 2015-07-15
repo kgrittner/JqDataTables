@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Jquery Datatables Project</title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Make Sure dataTables.bootstrap & dataTables.tableTools ARE in the following order -->
+    <link href="Content/DataTables-1.10.2/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="Content/DataTables-1.10.2/css/dataTables.tableTools.min.css" rel="stylesheet" />
+
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+
+    <link href="Content/simple-line.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+
+
+    <style>
+        /* The following is for the plus/minus on the left side of the data table */
+
+        .dataTable .row-details.row-details-close {
+            background: url("site/img/datatable-row-openclose.png") no-repeat 0 0;
+        }
+
+        .dataTable .row-details.row-details-open {
+            background: url("site/img/datatable-row-openclose.png") no-repeat 0 -23px;
+        }
+
+        .dataTable .row-details {
+            margin-top: 3px;
+            display: inline-block;
+            cursor: pointer;
+            width: 14px;
+            height: 14px;
+        }
+
+
+        /* PDF,CSV,Excel,Print ToolBar */
+        .DTTT_container{padding-left:15px}
+       
+
+        /* Bootstrap Changes */
+        .col-md-12{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+        .col-md-6{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+        .col-md-5{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+        .col-md-4{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+        .col-md-3{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+        .col-md-2{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    @RenderBody();
+
+    
+
+    
+
+
+
+
+
+
+    <!-- Javascript Plugins -->
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <!--
+         Make Sure: 
+         dataTables.js dataTables.bootstrap.js & dataTables.tableTools.js 
+         ARE in the following order 
+        -->
+    <script src="Scripts/DataTables-1.10.2/jquery.dataTables.js"></script>
+    <script src="Scripts/DataTables-1.10.2/dataTables.bootstrap.js"></script>
+    <script src="Scripts/DataTables-1.10.2/dataTables.tableTools.min.js"></script>
+
+    <!-- -------------------- -->
+
+    <script src="~/Scripts/toastr.min.js"></script>
+
+
+    
+    <!-- Custom Script -->
+    <script src="site/test.js"></script>
+</body>
+</html>

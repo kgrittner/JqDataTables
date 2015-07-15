@@ -1,0 +1,10 @@
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\JqDataTables.dll
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\JqDataTables.pdb
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\Newtonsoft.Json.dll
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\SQLHelper.dll
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\Newtonsoft.Json.xml
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\SQLHelper.pdb
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\obj\Debug\JqDataTables.csprojResolveAssemblyReference.cache
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\obj\Debug\JqDataTables.dll
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\obj\Debug\JqDataTables.pdb
+C:\aaaProjects\Run\Websites\JqDataTables\JqDataTables\bin\JqDataTables.dll.config
